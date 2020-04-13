@@ -1,0 +1,204 @@
+/* MayerWeb CSS reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS */
+body {
+	padding: 0 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+/* Hero section */
+#hero {
+    overflow: hidden;
+    height: 540px;
+    background-image: url("images/hero-image.jpg");
+    background-position: left bottom;
+    background-size: cover;
+}
+hgroup {
+	text-align: center;
+	color: white;
+}
+h1 {
+	font-size: 60px;
+}
+h2 {
+	margin: 20px 0 30px 0;
+	font-size: 25px;
+	font-weight: 200;
+	line-height: 35px;
+}
+h4 {
+	font-size: 20px;
+}
+#hero-link {
+	margin-right: 15px;
+}
+#hero-link:hover {
+	text-decoration: underline;
+}
+h4 i {
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+/* Navigation */
+nav {
+	display: flex;
+	justify-content: center;
+	margin: 80px 0 60px 0;
+}
+#navigation-list {
+	display: flex;
+	justify-content: center;
+	-webkit-box-shadow: 3px 2px 19px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 2px 19px -8px rgba(0,0,0,0.75);
+	box-shadow: 3px 2px 19px -8px rgba(0,0,0,0.75);
+}
+#navigation-list li {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background: rgb(121, 121, 121);
+	background: linear-gradient(0deg, rgba(129,129,129,1) 0%, rgba(92,92,92,1) 50%, rgba(121,121,121,1) 50%, rgba(111,111,111,1) 100%);
+	border-right: 0.1px solid rgb(90, 90, 90);
+}
+#navigation-list li a {
+	display: inline-block;
+	padding: 10px;
+	width: 80px;
+	text-shadow: 0px -1px 0px #000000;
+}
+/* Navigation - logo */
+#logo {
+	font-size: 1.4em;
+}
+/* Navigation - search */
+#search-list-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: none !important;
+}
+#nav-search {
+	margin: 0 15px;
+	padding: 2px 0 2px 25px;
+	width: 100px;
+	background-image: url("images/icon-pending.svg");
+	background-repeat: no-repeat;
+	background-position: 5px 4px;
+	background-color: transparent;
+	border-top: 1px solid #4C4C4C;
+	border-right: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	border-left: 1px solid #4C4C4C;
+	border-radius: 14px;
+	outline:none;
+	transition: 0.4s;
+}
+#nav-search:focus {
+	width: 140px;
+	background-image: url("images/icon-clicked.svg");
+	background-repeat: no-repeat;
+	background-position: 5px 4px;
+	background-color: white;
+}
+/* Featured */
+#featured {
+	display: flex;
+	justify-content: space-between;
+	margin: 1.5px 0;
+}
+.featured-item {
+	width: 24.9%;
+	height: 200px;
+}
+#featured-item1 {
+	background-image: url("images/list-image1.jpg");
+}
+#featured-item2 {
+	background-image: url("images/list-image2.jpg");
+}
+#featured-item3 {
+	background-image: url("images/list-image3.jpg");
+}
+#featured-item4 {
+	background-image: url("images/list-image4.jpg");
+}
+/* Footer */
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 200px;
+	font-size: 0.9em;
+	color: #6e6e6e;
+}
+#company {
+	display: inline-block;
+}
+#legal {
+	margin-top: 15px;
+}
+#legal-link-list {
+	display: inline-block;
+}
+footer ul li {
+	display: inline-block;
+	padding: 0 3px;
+	border-right: 1px solid grey;
+}
+footer ul li:last-of-type {
+	border-right: none;
+}
+footer a {
+	color: #08c;
+}
+#country-icon {
+	vertical-align: middle;
+}
